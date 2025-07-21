@@ -1,26 +1,237 @@
-@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --global-bg-color: #1b272e;
+  --global-bottom-bg-color: #000510;
+  --global-nav-links-color: #bac3c7;
+  --global-btn-color-bg: #99e39e;
+  --global-btn2-color: #000;
+  --global-toggle-color: #fff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--global-bottom-bg-color) !important;
+}
+/* Header Components */
+/* Header Styling */
+.navbar .nav-link {
+  color: var(--global-nav-links-color);
+  font-size: 18px;
+}
+.navbar .nav-link:hover {
+  color: var(--global-btn-color-bg);
+}
+.navbar .registration .btn {
+  border: 1px solid var(--global-btn-color-bg);
+  color: var(--global-btn-color-bg);
+}
+.navbar .registration .btn:hover {
+  color: var(--global-btn2-color);
+  background: var(--global-btn-color-bg);
+}
+.navbar .registration .btn2 {
+  color: var(--global-btn2-color);
+  background: var(--global-btn-color-bg);
+}
+.navbar-toggler-white {
+  border-color: var(--global-toggle-color);
+}
+.navbar-toggler-white .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Header Styling End
+Header Components End */
+
+/* Section 1 Here */
+/* Hero Section Styling */
+.hero .hero-detail{
+  padding-top: 80px;
+}
+.hero .hero-detail h3 {
+  font-size: 33px;
+  font-weight: normal;
+}
+.hero .hero-detail h3 span {
+  color: var(--global-btn-color-bg);
+}
+.hero .hero-detail h1 {
+  font-size: 5rem;
+}
+.hero .hero-detail h1 span {
+  color: var(--global-btn-color-bg);
+}
+.hero .hero-detail .btn {
+  color: var(--global-btn2-color);
+  background: var(--global-btn-color-bg);
+  font-weight: bold;
+  font-size: 17px;
+}
+.hero .hero-detail .btn:hover{
+  border: 1px solid var(--global-btn-color-bg);
+  color: var(--global-btn-color-bg);
+  background: none;
+}
+.hero .hero-detail .btn2 {
+  border: 1px solid var(--global-btn-color-bg);
+  color: var(--global-btn-color-bg);
+  background: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.hero .hero-detail .btn2:hover{
+  color: var(--global-btn2-color);
+  background: var(--global-btn-color-bg);
+}
+/* Hero Section end */
+/* Section 1 End */
+
+/* Section 3 Work Section */
+/* Work Section */
+.work .work-detail{
+  padding-top: 160px;
+}
+.work .work-detail h1{
+  font-size: 50px;
+  color: var(--global-toggle-color);
+  font-weight: normal;
+}
+.work .work-detail h1 span{
+  color: var(--global-btn-color-bg);
+}
+.work .work-detail h3{
+  color: var(--global-nav-links-color);
+}
+/* Section 3 End */
+/* Secton Work End */
+
+/* Section 4 Start */
+/* .Development Section */
+.Development h4{
+  color: var(--global-nav-links-color);
+}
+.Development h4 span{
+  color: var(--global-btn-color-bg);
+}
+.Development h1{
+  color: var(--global-toggle-color);
+}
+/* Section 4 End */
+/* .Development Section */
+
+/* Section 6 start */
+/* Portfolio Section */
+.Portfolio .portfolio-detail{
+  padding-top: 230px;
+}
+.Portfolio .portfolio-detail h1{
+  font-size: 50px;
+  color: var(--global-toggle-color);
+  font-weight: normal;
+}
+.Portfolio .portfolio-detail p{
+  font-size: 22px;
+  color: var(--global-nav-links-color);
+}
+.Portfolio .portfolio-detail span{
+  color: var(--global-btn-color-bg);
+}
+.Portfolio .portfolio-detail h3{
+  color: var(--global-nav-links-color);
+}
+/* Section 7 End */
+/* Portfolio section  */
+.Upgrade .upgrade-detail{
+  padding-top: 150px;
+}
+.Upgrade .upgrade-detail h5 span{
+  color: var(--global-btn-color-bg);
+}
+.Upgrade .upgrade-detail h1{
+  color: var(--global-toggle-color);
+}
+.Upgrade .upgrade-detail p{
+  color: var(--global-nav-links-color);
+  font-size: 18px;
+}
+.Upgrade .upgrade-detail h4{
+  color: var(--global-nav-links-color);
+  font-size: 20px;
+}
+/* Section 7 End */
+/* Upgrade Section */
+
+
+/* Section 8 Crypgo */
+/* side-crypgo Section */
+.side-crypgo h3{
+  color: var(--global-toggle-color);
+}
+.side-crypgo h3 span{
+  color: var(--global-btn-color-bg);
+}
+.side-crypgo h1{
+  color: var(--global-toggle-color);
+  font-size: 50px;
+}
+.side-crypgo h1 span{
+  color: var(--global-btn-color-bg);
+}
+.side-crypgo .card .card-body p{
+  color: var(--global-nav-links-color);
+  font-size: 18px;
+}
+/* Section 8 End */
+/* Side Crypgo Section */
+
+/* Footer Start */
+/* Footer Content */
+footer h2{
+  color: var(--global-toggle-color);
+  font-size: 28px;
+}
+footer span{
+  color: var(--global-nav-links-color);
+  font-size: 19px;
+}
+footer h5{
+  color: var(--global-nav-links-color);
+  font-size: 20px;
+  font-weight: normal;
+}
+footer .form-control{
+  background: none;
+  border: 1px solid var(--global-nav-links-color);
+}
+footer .form-control::placeholder{
+  color: var(--global-nav-links-color);
+}
+
+/* Modal Components */
+.custom-modal-theme {
+  background-color: var(--global-bg-color);
+  color: var(--global-nav-links-color);
+}
+
+.custom-modal-theme .modal-content {
+  background-color: var(--global-bg-color);
+  color: var(--global-nav-links-color);
+}
+
+.custom-modal-theme .modal-header {
+  border-bottom: none;
+  background-color: var(--global-bg-color);
+}
+
+.custom-modal-theme .modal-body {
+  background-color: var(--global-bg-color);
+}
+
+.custom-modal-theme .ant-form-item-label label {
+  color: var(--global-nav-links-color);
+  background: none;
+}
+.custom-modal-theme .ant-form-item input::placeholder{
+  color: white;
 }
