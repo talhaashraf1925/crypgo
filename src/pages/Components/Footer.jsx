@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaFacebook,FaInstagram, FaTwitter } from "react-icons/fa";
-import React from 'react'
+import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 
 export default function Footer() {

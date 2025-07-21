@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav,Offcanvas } from "react-bootstrap";
 import Link from "next/link";
 import LoginModal from "./LoginModal";
